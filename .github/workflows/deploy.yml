@@ -31,7 +31,7 @@ jobs:
       id: ecr
 
     - name: Build Docker image
-      run: docker build -t my-strapi-app ./app
+      run: docker build -t my-strapi-app -f my-strapi-app/Dockerfile my-strapi-app
 
     - name: Tag image
       run: |
